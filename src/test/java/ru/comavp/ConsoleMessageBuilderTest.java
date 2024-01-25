@@ -1,9 +1,7 @@
 package ru.comavp;
 
 import org.junit.Test;
-
 import java.io.IOException;
-
 import static org.junit.Assert.assertEquals;
 
 public class ConsoleMessageBuilderTest {
@@ -15,8 +13,8 @@ public class ConsoleMessageBuilderTest {
         String result1 = consoleMessageBuilder.getWordState("абиссаль", new boolean[] {true, false, false, true, true, true, false, false});
         String result2 = consoleMessageBuilder.getWordState("агар-агар", new boolean[] {true, false, true, false, true, true, false, true, false});
 
-        assertEquals("А__ССА__", result1);
-        assertEquals("А_А_-А_А_", result2);
+        assertEquals("А**ССА**", result1);
+        assertEquals("А*А*-А*А*", result2);
     }
 
     @Test
