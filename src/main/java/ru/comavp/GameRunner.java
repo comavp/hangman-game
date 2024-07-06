@@ -18,7 +18,7 @@ public class GameRunner {
             while (!gameFinished) {
                 startGame(wordChooser, consoleMessageBuilder);
 
-                System.out.println("Если Вы хотите продолжить игру, введите 'y'. (В противном случае - любую клавишу");
+                System.out.println("Если Вы хотите продолжить игру, введите 'y'. (В противном случае - любую клавишу)");
                 String str = scanner.next();
                 if (!"y".equals(str)) {
                     gameFinished = true;
